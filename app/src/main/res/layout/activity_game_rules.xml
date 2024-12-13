@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/correct_view"
+        android:layout_width="386dp"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/stenc_ex"
+        android:text="How To Play"
+        android:textAlignment="center"
+        android:textColor="@color/dBlue"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="381dp"
+        android:layout_height="500dp"
+        android:contentDescription="background"
+        android:scaleType="fitXY"
+        android:src="@drawable/purewhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correct_view"
+        app:layout_constraintVertical_bias="0.086"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/bt_home"
+        android:layout_width="351dp"
+        android:layout_height="73dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/stenc_ex"
+        android:text="Home"
+        android:textColor="@color/dBlue"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.518"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/difficulty_view"
+        android:layout_width="353dp"
+        android:layout_height="472dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Choose 1-6 topics and then choose easy, medium, or hard difficulty. After that enter you name and push beigin. You will be given a large series of question of which you will have 30 seconds to complete each one. Each question you complete gives you points and a new question to complete and the timer is also reset. If the timer runs out, you don't lose any points, but the timer resets and you lose out on a question. When you run out of questions the game is reset and your score is displayed in the game over screen. If you get a high score, it will show up in the leaderboard. Mulitplyayer works the same way.\n\nGood luck and have fun!!!!"
+        android:textAlignment="center"
+        android:textColor="@color/dBlue"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
